@@ -9,3 +9,14 @@
 8. go into container file system: [docker exec -it shopping-mongo /bin/bash] and I see this: root@53534033ae7f:/#
 
 # using mongo cli inside container
+connect to interactive terminal for mongodb connection, run mongo commands. Needs Powershell.
+1. [docker exec -it shopping-mongo /bin/bash]
+2. [ls] to see what in there
+3. [mongo], now the prompt is '>'
+4. [show dbs] or [show databases]
+5. [use CatalogDb] to create new database
+6. [db.createCollection("Products")]
+7. db.Products.insertMany([{ 'Name':'Asus Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':54.93 }, { 'Name':'HP Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':88.93 } ])
+8. db.Products.find({}).pretty()
+9. [db.Products.remove({})] if I want
+10. [show collections]
