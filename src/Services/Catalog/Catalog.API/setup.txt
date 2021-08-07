@@ -1,0 +1,11 @@
+﻿# MongoDB
+1. hub.docker.com/_mongo
+2. pull image to local:
+3. under solution src folder Open In Terminal
+4. [docker pull mongo]
+5. run: [docker run -d -p 27017:27017 --name shopping-mongo mongo]
+6. [docker ps] to see the container
+7. [docker logs -f shopping-mongo]
+8. go into container file system: [docker exec -it shopping-mongo /bin/bash] and I see this: root@53534033ae7f:/#
+
+# using mongo cli inside container
