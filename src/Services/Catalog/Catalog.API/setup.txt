@@ -27,3 +27,17 @@ connect to interactive terminal for mongodb connection, run mongo commands. Need
 3. select Linux
 4. OK
 5. a Dockerfile is generated under the project, and a docker-compose node is also generated under solution
+
+# adding mongodb image into docker compose
+1. add 'catalogdb:
+    image: mongo' into services
+2. add 'volumns: mongo_data:
+3. modify docker-compose.override.yml to include catalogdb service, modify environment, depends_on, and ports of catalog.api service
+4. remove previous mongo container before up
+    - docker ps
+    - docker stop xyz
+    - docker rm xyz    
+    - optional: remove image to have a clean start:
+        - docker images  (find the mongo image) and
+        - docker rmi imageId
+5. cmd: docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
