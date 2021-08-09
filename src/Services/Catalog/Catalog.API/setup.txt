@@ -20,3 +20,10 @@ connect to interactive terminal for mongodb connection, run mongo commands. Need
 8. db.Products.find({}).pretty()
 9. [db.Products.remove({})] if I want
 10. [show collections]
+
+# Container Orchestrator Support (for Catalog.API)
+1. right click project and Add Container Orchestrator Support ...
+2. select Docker Compose
+3. select Linux
+4. OK
+5. a Dockerfile is generated under the project, and a docker-compose node is also generated under solution
