@@ -41,3 +41,8 @@ connect to interactive terminal for mongodb connection, run mongo commands. Need
         - docker images  (find the mongo image) and
         - docker rmi imageId
 5. cmd: docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
+
+
+# mongoclient 
+1. docker run -d -p 3000:3000 mongoclient/mongoclient
+2. http://localhost:3000/
