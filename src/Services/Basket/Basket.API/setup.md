@@ -15,3 +15,11 @@
 	5.3  get key
 	5.4  set name my
 	5.5  get name
+
+
+# containerize
+1. right click Basket.API and add Container Orchestrator Support ...
+2. select Docker Compose
+3. select Linux
+4. OK
+5. a Dockerfile is generated under the project, and docker-compose that already exists got modified
