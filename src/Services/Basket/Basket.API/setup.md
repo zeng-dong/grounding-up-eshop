@@ -23,3 +23,16 @@
 3. select Linux
 4. OK
 5. a Dockerfile is generated under the project, and docker-compose that already exists got modified
+6. modify docker-compose to config basketdb
+7. now run 'docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d' and I can see:
+/c/dev/githubrepos/GroundingUpEShop/src (main)
+$ docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+Creating network "src_default" with the default driver
+Creating basketdb  ... done
+Creating catalogdb ... done
+Creating catalog.api ... done
+Creating basket.api  ... done
+
+and I can access http://localhost:8001/swagger/index.html and http://localhost:8000/swagger/index.html
+
+
