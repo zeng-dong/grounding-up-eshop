@@ -35,4 +35,13 @@ Creating basket.api  ... done
 
 and I can access http://localhost:8001/swagger/index.html and http://localhost:8000/swagger/index.html
 
-
+# container management with Portainer
+- resources:
+	* https://hub.docker.com/r/portainer/portainer-ce
+	* https://documentation.portainer.io/archive/1.23.2/deployment/
+- intro
+	manage container-based software application
+- add to our docker-compose
+	1. add service into docker-compose
+	2. add 'portainer_data:' to volumes
+	3. modify docker-compose.override to have 'portainer' service
