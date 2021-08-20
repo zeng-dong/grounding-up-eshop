@@ -45,3 +45,7 @@ and I can access http://localhost:8001/swagger/index.html and http://localhost:8
 	1. add service into docker-compose
 	2. add 'portainer_data:' to volumes
 	3. modify docker-compose.override to have 'portainer' service
+- run it: docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+	* docker ps
+	* localhost:9000
+	* admin/admin1234
